@@ -18,6 +18,7 @@
 # ---------------------------------------
 server {
     server_name support.vexly.tw1.su;
+    listen 443 ssl;
 
     ssl_certificate /etc/letsencrypt/live/support.vexly.tw1.su/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/support.vexly.tw1.su/privkey.pem;
