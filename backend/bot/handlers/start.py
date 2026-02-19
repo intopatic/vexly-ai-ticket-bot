@@ -42,8 +42,9 @@ async def start_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             pass
         
         await update.message.reply_text(
-            f"Здравствуйте! Это поддержка {service_name}.\n\n"
-            "Напишите ваше сообщение — менеджер ответит здесь в боте."
+            f"<b>👋 Приветствуем вас в поддержке {service_name}</b>\n\n"
+            "Задайте вопрос — я помогу разобраться 🤖\nЕсли понадобится живой специалист, просто нажмите кнопку <b>«Позвать менеджера»</b>, и я подключу менеджера в один клик.",
+            parse_mode="HTML"
         )
         return
 
